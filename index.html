@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css" rel="stylesheet">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <style>
+    * { box-sizing: border-box; }
+
+    @font-face {
+      font-family: "Figtree";
+      src: local("Figtree"), url("assets/fonts/Figtree-VariableFont_wght.ttf") format("truetype");
+    }
+
+    .font-outfit {
+      font-family: "Figtree";
+    }
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-outfit flex flex-col h-screen">
+  <main class="w-screen flex flex-1 justify-center items-center bg-amber-300">
+    <div class="bg-white p-6 rounded-[20px] text-center flex flex-col items-left gap-6 border-solid border-black border-[1px] shadow-2xl min-[320px]:w-[327px] min-[1440px]:w-96 shadow-[7px_7px_0_0_#000] hover:shadow-[16px_16px_0_0_#000]">
+      <img src="assets/images/illustration-article.svg" class="rounded-[10px]" alt="illustration-article">
+      <div class="flex flex-col gap-3 items-start">
+        <div class="text-neutral-900 px-3 py-1 bg-amber-300 rounded font-extrabold text-md">Learning</div>
+        <p class="font-medium text-neutral-900 text-sm">Published 21 Dec 2023</p>
+        <h3 class="text-xl font-extrabold text-neutral-900 cursor-pointer hover:text-amber-300">HTML & CSS foundations</h3>
+        <p class="text-left text-zinc-500 text-md font-medium">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+      </div>
+      <div class="flex items-center gap-3">
+        <img class="w-8 h-8" src="assets/images/image-avatar.webp" alt="image-authors">
+        <div class="font-extrabold">Greg Hooper</div>
+      </div>
+    </div>
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/akshaycr9" target="_blank">Akshay Thadani</a>.
+  </div>
+</body>
+</html>
